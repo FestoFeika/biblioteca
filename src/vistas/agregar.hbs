@@ -1,0 +1,44 @@
+<div class="col-md-5 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Nuevo libro</h3>
+        </div>
+        <div class="card_body">
+            <form action="/agregar" method="post">
+                <div class="form-group">
+                    <b>Nombre del libro</b>
+                    <input type="text" name="titulo" class="form-control" placeholder="Nombre del libro" autofocus>
+                </div>
+                <div class="form-group">
+                    <b>Nombre del autor</b>
+                    <input type="text" name="escritor" class="form-control" placeholder="Nombre del autor" autofocus>
+                </div>
+                <div class="form-group">
+                    <b>Editorial</b>
+                    <input type="text" name="editorial" class="form-control" placeholder="Editorial" autofocus>
+                </div>
+                <div class="form-group">
+                    <b>Estreno</b>
+                    <input type="date" name="estreno" class="form-control">
+                </div>
+                <div class="form-group">
+                    <b>Franquicia</b>
+                    <input type="text" name="franquicia" class="form-control" placeholder="Franquicia" autofocus>
+                </div>
+                <div class="form-group">
+                    <b>Catalogo</b>      
+                    <select name="catalogo" class="form-control">
+                        <option value="accion">Accion</option>
+                        <option value="ficcion">Ficcion</option>
+                        <option value="terror">Terror</option>
+                    </select>
+                </div>
+                <div class="form-group d-grid ">
+                    <button class="btn btn-primary" type="submit">
+                        Guardar Libro
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

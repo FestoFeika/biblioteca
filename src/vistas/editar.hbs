@@ -1,0 +1,49 @@
+<div class="col-md-5 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar Libro</h3>
+        </div>
+        <div class="card_body">
+            <form action="/editar/{{libros._id}}" method="post">
+                <div class="form-group">
+                    <b>Nombre del libro</b>
+                    <input type="text" name="titulo" class="form-control" placeholder="Titulo del libro"
+                        value="{{libros.titulo}}" autofocus>
+                </div>
+                <div class="form-group">
+                    <b>Nombre del autor</b>
+                    <input type="text" name="escritor" class="form-control" placeholder="Autor" value="{{libros.escritor}}">
+                </div>
+                <div class="form-group">
+                    <b>Editorial</b>
+                    <input type="text" name="editorial" class="form-control" placeholder="Editorial"
+                        value="{{libros.editorial}}">
+                </div>
+                <div class="form-group">
+                    <input type="date" name="estreno" class="form-control" placeholder="Estreno"
+                        value="{{libros.estreno}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="franquicia" class="form-control" placeholder="Franquicia"
+                        value="{{libros.franquicia}}">
+                </div>
+                <div class="form-group">
+                    <select name="catalogo" class="form-control">
+                        <option option="accion">Accion</option>
+                        <option option="ficcion">Ficcion</option>
+                        <option option="terror">Terror</option>
+                        <value="{{libros.catalogo}}">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="stock" class="form-control" placeholder="Stock"
+                        value="{{libros.stock}}">
+                </div>
+                <div class="form-group d-grid ">
+                    <button class="btn btn-primary" type="submit">
+                        Guardar Cambios del libro
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

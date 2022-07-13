@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Biblioteca Feika</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/todos">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/agregar">Agregar libros</a>
+                    </li>
+                </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="agregar" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Buscar</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/todos">Ver a todos los libros</a></li>
+                            <li><a class="dropdown-item" href="/primer">Ver primer libro</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/todos/catalogo/accion">Libros de accion</a></li>
+                            <li><a class="dropdown-item" href="/todos/catalogo/ficcion">Libros de ficcion</a></li>
+                            <li><a class="dropdown-item" href="/todos/catalogo/terror">Libros de terror</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/todos/ordenadoA">Ordenados ascendentemente por nombre</a></li>
+                            <li><a class="dropdown-item" href="/todos/ordenadoB">Ordenados descendentemente por nombre</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

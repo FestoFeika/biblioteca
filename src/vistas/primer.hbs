@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-md-6 p-2">
+        <div class="container bg-info">
+            <div class="row">
+                <div class="col text-center">
+                    <b>
+                        <h3> {{libro.titulo}} </h3>
+                    </b> <!-- Muestra el nombre comun en el Json  -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">escritores:</div>
+                <div class="col-2">{{libro.escritor}}</div> <!-- Muestra el nombre cientifico en el Json  -->
+            </div>
+            {{#if editorial}}
+            <!-- Solo si existe el campo color en el Json, lo muestra  -->
+            <div class="row">
+                <div class="col-2">Editorial:</div>
+                <div class="col-2">{{libro.editorial}}</div>
+            </div>
+            {{/if}}
+            <div class="row">
+                <div class="col-"></div><!-- Muestra los datos en el documento incrustado  -->
+                <div class="col-2">Estreno:</div>
+                <div class="col-2">{{libro.estreno}}</div>
+            </div>
+            <div class="row">
+                <div class="col-"></div>
+                <div class="col-2">Franquicia:</div>
+                <div class="col-2">{{libro.franquicia}}</div>
+            </div>
+            <div class="row">
+                <div class="col-"></div>
+                <div class="col-2">Catalogos:</div>
+                <div class="col-2">{{libro.catalogo}}</div>
+            </div>
+            <div class="row">
+                <div class="col-"></div>
+                <div class="col-2">Stock:</div>
+                <div class="col-2">{{libro.stock}}</div>
+            </div>
+        </div>
+    </div>
+</div>

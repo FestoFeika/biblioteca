@@ -1,0 +1,2 @@
+PARA IMPORTAR
+mongoimport --db=Biblioteca --collection=libros --file=libros.json

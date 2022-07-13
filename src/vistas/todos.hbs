@@ -1,0 +1,52 @@
+<div class="row">
+    <!-- agregamos una fila única dentro del contenedor (cada fila tine 12 columnas) -->
+
+    {{#each libros}}
+    <!-- como es un arreglo, se analiza documento a documento  -->
+
+    <div class="col-md-4 p-2">
+        <div class="container bg-info">
+            <div class="row">
+                <div class="col text-center">
+                    <b><h3> {{titulo}} </h3> </b> <!-- Muestra el nombre comun en el Json  -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">Escritores:</div>
+                <div class="col-3">{{escritor}}</div> <!-- Muestra el nombre cientifico en el Json  -->
+            </div>
+            {{#if editorial}}               <!-- Solo si existe el campo color en el Json, lo muestra  -->
+            <div class="row">
+                <div class="col-3">Editorial:</div>
+                <div class="col-3">{{editorial}}</div> 
+            </div>
+            {{/if}}
+            <div class="row">
+                <div class="col-0"></div><!-- Muestra los datos en el documento incrustado  -->
+                <div class="col-3">Estreno:</div>
+                <div class="col">{{estreno}}</div>
+            </div>
+            <div class="row">
+                <div class="col-0"></div>
+                <div class="col-3">Franquicia:</div>
+                <div class="col">{{franquicia}}</div>
+            </div>
+            <div class="row">
+                <div class="col-0"></div>
+                <div class="col-3">Catalogos:</div>
+                <div class="col">{{catalogo}}</div>
+            </div>
+            <div class="row">
+                <div class="col-0"></div>
+                <div class="col-3">Stock:</div>
+                <div class="col">{{stock}}</div>
+                <button class="btn btn-primary" onclick="location.href='/editar/{{_id}}'" type="submit">
+                        Editar libro
+                    </button>
+            </div>
+        </div>
+    </div>
+
+    {{/each}}
+
+</div>
